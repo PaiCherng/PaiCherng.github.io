@@ -1,0 +1,63 @@
+.paragraph {
+    text-indent: 50px;
+    }
+
+    /* by the way this is the tag for comments on CSS */
+
+body{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header, footer {
+    background-color: #ccfe69;
+}
+
+.site-title {
+    color: #af004d;
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px;
+}
+
+ol {
+    list-style-type: square;
+}
+
+ol :nth-child(odd) {
+    background-color: aquamarine;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navlink {
+    text-decoration: none;
+    background-color: white;
+    border-style: solid;
+    border-color: #af004d;
+    border-width: 2px;
+}
+
+a:hover {
+    background-color: aquamarine;
+}
+
+/* HOMEWORK BRIEF
+DONE - Id selector - add an id my-image to your image and select the id in CSS to add a 
+box-shadow with 0 horizontal and vertical placement, 2px of the blur, 1px of the spread and black colour 
+
+DONE - Replace the bullets from the list of hobbies with squares
+
+DONE - Using the nth-child selector - add a background to the odd list items in the hobby list
+
+- Styling the Navigation
+    DONE > Remove the bullets from the unordered list in navigation (only if you have used the ul tag inside the nav tag) 
+    DONE > Remove the underline from the links
+    DONE > Add a background and border to the links
+    DONE > Change the background colour on hover or focus state of the links
+
+DONE - Validate HTML
+*/

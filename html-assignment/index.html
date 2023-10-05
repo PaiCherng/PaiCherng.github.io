@@ -6,32 +6,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        
-        <style>
-            div.a {
-            text-indent: 50px;
-            }
-        </style>        
+        <link href="css/home-style.css" rel="stylesheet">
+        <!-- you HAVE to have rel="stylesheet" when linking CSS or it won't load. 
+            Rel tells the browser what this is and priority of loading essentially -->         
     </head>
 
-
-
 <!-- Above is head tag we're done with head tag -->
-
-
 
     <body>
         <header> 
             <!-- !NEW! ADDED NAV AND SELF PORTRAIT INTO HEADER -->
+            <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="notes.html">Notes</a></li>
+                    <li><a class="navlink" href="index.html">Home</a></li>
+                    <li><a class="navlink" href="notes.html">Notes</a></li>
                 </ul>
             </nav>
-            <h1>HOME</h1>
+            </div>
+            <h1 class="site-title">HOME</h1>
             <h1>Pai Cherng</h1>
-            <img src="images/vector-portrait72.JPG" alt="vector portrait" width="400" height="400">
+            <img src="images/vector-portrait72.JPG" alt="vector portrait" id="my-image" width="400" height="400">
         </header>
 
         <main>
@@ -39,7 +34,7 @@
                 <!-- Add article with heading About Me -->
                 <h3>About Me</h3>
             </article>
-            <div class="a">
+            <div class="paragraph">
                 <!-- Write at least two paragraphs about yourself. Minimum 50 words per paragraph. -->
                 My name's Pai, pronounced like the number, I'm from Taiwan and I take any and all pronouns (use whatever you like).&#9996;
                 I'm a fan of video games, Some of the genres I love are immersive sims (Dishonored series, Deux Ex), 
@@ -56,7 +51,7 @@
                 "The greater danger for most of us lies not in setting our aim too high and falling short; 
                 but in setting our aim too low, and achieving our mark."
             </blockquote>
-            <div class="a">
+            <div class="paragraph">
                 <cite>~ Michelangelo, Italian Sculptor, Painter and Poet.</cite>
             </div>
 
@@ -77,9 +72,6 @@
             paragraph not run all the way across the page. I'm pretty sure it's a CSS thing, so I'm not going to get too far ahead of 
             myself on this assignment I'm already messing with style div indents as you can probably tell.
         </main>
-        
-        <!-- Just to visually push the footer down here's a line of <br>s -->
-        <br><br><br><br><br><br><br>
         
         <footer>
             <p>Footer copyright &copy; 2023 Pai Cherng IMD WebDev Class. <abbr title="can you tell this is all made up">All rights reserved.</abbr></p>

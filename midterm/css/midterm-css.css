@@ -1,0 +1,42 @@
+.starfish-icon {
+    width: 15%;
+    height: auto;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style-type: none;
+    width: 33%;
+    overflow: hidden;
+    background-color: #d4e9e7;
+    text-align: center;
+    float: center;
+
+}
+
+body {
+    width: 1024px;
+    margin: auto;
+    background-color: #aad4cf;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.starfish-facts {
+    text-decoration: dotted;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.starfish-facts {
+    list-style-type: disc;
+    list-style-position: inside;
+}

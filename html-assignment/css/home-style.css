@@ -1,15 +1,16 @@
 .paragraph {
     text-indent: 50px;
-    }
+}
 
-    /* by the way this is the tag for comments on CSS */
+/* by the way this is the tag for comments on CSS */
 
-body{
+body {
     font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-header, footer {
+header,
+footer {
     background-color: #ccfe69;
 }
 

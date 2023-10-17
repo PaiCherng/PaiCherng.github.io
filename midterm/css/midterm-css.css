@@ -1,19 +1,30 @@
-.starfish-icon {
-    width: 15%;
-    height: auto;
+html {
+    scroll-behavior: smooth;
 }
 
+/* NAVBAR  */
 .navbar li {
     display: inline-block;
-    list-style-type: none;
     width: 33%;
-    overflow: hidden;
-    background-color: #d4e9e7;
     text-align: center;
-    float: center;
+    font-size: 1.5rem;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+}
+
+.navbar li:last-child {
+    border: none;
+}
+
+.navbar li a {
+    text-decoration: none;
 
 }
 
+/* NAVBAR END */
+
+
+/* MAIN BODY AND REST OF CONTENT */
 body {
     width: 1024px;
     margin: auto;
@@ -21,10 +32,16 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+.content {
+    background-color: #d4e9e7;
+    padding: 1rem;
+}
+
 .starfish-facts {
     text-decoration: dotted;
 }
 
+/* BODY - HEADINGS */
 h1 {
     font-size: 2rem;
     font-weight: 500;
@@ -33,10 +50,73 @@ h1 {
 
 h2 {
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* BODY - TOP BANNER WITH TITLE & STARFISH IMG */
+.topbanner {
+    width: 100%;
+    position: relative;
+}
+
+.topbanner h3 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 6rem;
+    width: 100%;
+    text-align: center;
+}
+
+.square-left-float {
+    float: left;
+    width: 150px;
+    padding: 0.5rem;
+}
+
+.starfish-icon {
+    width: 100%;
+    height: auto;
 }
 
 .starfish-facts {
     list-style-type: disc;
     list-style-position: inside;
+}
+
+/* CONTACT FORM STARTS HERE */
+
+.form-wrapper {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+form input[type=text],
+textarea {
+    width: 99%;
+}
+
+.radio-form {
+    display: inline-block;
+}
+
+.form-wrapper button {
+    text-decoration: none;
+    background-color: #d4e9e7;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/* FOOTER */
+footer {
+    text-align: right;
+    padding: 1rem;
 }

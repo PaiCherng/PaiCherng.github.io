@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+/* NOTE: 
+    BG color: #aad4cf
+    2ndary color: #d4e9e7 */
+
 /* NAVBAR  */
 .navbar li {
     display: inline-block;

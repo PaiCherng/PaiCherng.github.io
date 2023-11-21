@@ -1,0 +1,41 @@
+/* COLOR PALETTE */
+/* Use 'Open Sans' Google font for the webpage
+Colours values used in the layout 
+#c78c06
+#ffe6ac
+#222
+white
+
+- The maximum width of the container is 1200px
+- Add a min-width media query for the screen size of 760px and above
+*/
+
+
+/* DEFAULTS */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* WRAPPERS */
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+
+    /* Makes sure content stays within 1200px*/
+}
+
+
+/* HEADER STYLES */
+
+header {
+    background-color: #222;
+    color: #c78c06
+}

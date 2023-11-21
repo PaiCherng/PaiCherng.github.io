@@ -10,7 +10,6 @@ white
 - Add a min-width media query for the screen size of 760px and above
 */
 
-
 /* DEFAULTS */
 
 body {
@@ -22,8 +21,6 @@ img {
     height: auto;
 }
 
-
-
 /* WRAPPERS */
 .wrapper {
     max-width: 1200px;
@@ -32,9 +29,7 @@ img {
     /* Makes sure content stays within 1200px*/
 }
 
-
 /* HEADER STYLES */
-
 header {
     background-color: #222;
     color: #c78c06

@@ -1,13 +1,11 @@
-/* COLOR PALETTE */
-/* Use 'Open Sans' Google font for the webpage
+/* NOTES
+Use 'Open Sans' Google font for the webpage
 Colours values used in the layout 
 #c78c06
 #ffe6ac
 #222
 white
 
-- The maximum width of the container is 1200px
-- Add a min-width media query for the screen size of 760px and above
 */
 
 /* DEFAULTS */
@@ -25,7 +23,6 @@ img {
 .wrapper {
     max-width: 1200px;
     margin: auto;
-
     /* Makes sure content stays within 1200px*/
 }
 
@@ -33,4 +30,1002 @@ img {
 header {
     background-color: #222;
     color: #c78c06
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+}
+
+.logo-box {
+    background-color: #c78c06;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+
+.logo-box img {
+    max-width: 75px;    
+}
+
+.nav-ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar a:link {
+    text-decoration: none;
+    color: #c78c06;
+    padding: 1rem;
+    
+}
+
+.navbar a:visited {
+    text-decoration: none;
+    color: #c78c06;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: #222;
+    background-color: #c78c06;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.searchbar input {
+    flex-grow: 1;
+}
+
+.magnify {
+    border: #c78c06;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* WELCOME BANNER */
+
+#welcome {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    /* this is just to help visualize the grid
+    grid-template-areas:
+    "x1 x1 x1"
+    "x2 x2 x2"
+    "x2 x2 x2"
+    "x1 x1 x1"; */
+}
+
+.welcome-grid-img {
+    grid-column: 1/4;
+    grid-row: 1/5;
+}
+
+.welcome-text article {
+    background-color: #222222b3;
+}
+
+.welcome-text {
+    grid-column: 1/4;
+    grid-row: 2/4;
+  }
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    margin-left: 0.7rem;
+}
+
+.welcome-text p {
+    color:#ffffff;
+    margin-left: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.welcome-text button {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color:#c78c06;
+    border: none;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.7rem;
+}
+
+.welcome-text button span {
+    color:#222;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+
+/* ABOUT SECTION */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #ffe6ac;
+    padding: 0.7rem;
+}
+
+.about-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.about-card p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* SERVICES */
+
+#services h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+}
+
+/* SERVICES - 
+DIGITAL CARD */
+.digital-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6ac;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.digital-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.digital-card p {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.digital-card button span {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.digital-card button {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color:#222;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    margin-left: 0.7rem;
+    border: none;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+/* SERVICES - 
+MARKETING CARD */
+.marketing-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6ac;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.marketing-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.marketing-card p {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.marketing-card button span {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.marketing-card button {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color:#222;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    margin-left: 0.7rem;
+    border: none;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+/* SERVICES - 
+VIDEO CARD */
+.video-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6ac;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.video-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.video-card p {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.video-card button span {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.video-card button {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color:#222;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    margin-left: 0.7rem;
+    border: none;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+/* SERVICES - 
+WEB CARD */
+.web-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6ac;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.web-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.web-card p {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.web-card button span {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.web-card button {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color:#222;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    margin-left: 0.7rem;
+    border: none;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+/* SERVICES - 
+PRINT CARD */
+.print-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6ac;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.print-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.print-card p {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.print-card button span {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.print-card button {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color:#222;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    margin-left: 0.7rem;
+    border: none;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+/* VISION SECTION */
+#vision {
+    margin-top: 2rem;
+    /*
+    width: 100%;
+    height: 70%;*/
+    background-image: url("../images/vision.jpg");
+    background-position: center;
+    background-size: cover; /* This makes the image cover the entire container */
+    overflow: hidden;
+}
+
+#vision h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: #ffffff;
+}
+
+.vision-grid p {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: #ffffff;
+}
+
+.vision-grid button span {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.vision-grid button {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    border-color: #c78c06;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #222222d4;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    margin-left: 0.7rem;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+/* OUR TEAM */
+
+#team h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.pink-shirt-grid {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6ac;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.pink-shirt-grid h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom:0.5rem;
+    padding-left: 1rem;
+}
+
+.pink-shirt-grid h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+.pink-shirt-grid hr {
+    border-color: #c78c06;
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.pink-shirt-grid p {
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+/* TEAM - 
+STRIPED SHIRT CARD */
+
+.blk-shirt-grid {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6ac;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.blk-shirt-grid h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom:0.5rem;
+    padding-left: 1rem;
+}
+
+.blk-shirt-grid h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+.blk-shirt-grid hr {
+    border-color: #c78c06;
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.blk-shirt-grid p {
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+/* CONTACT US */
+
+.contact-h2 h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+}
+
+#contact h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#contact form {
+    width: 100%;
+    max-width: 760px; /* might need to adjust this later */
+}
+
+#contact form label {
+    display: block; /* Make labels stack on top of the input fields */
+    margin-bottom: 0.5rem; /* space between labels and input fields */
+    margin-top: 0.5rem; /* space between label and SEND US A MESSAGE */
+}
+
+#contact form input,
+#contact form textarea {
+    width: 99%; /* Make input fields and textarea stretch to the full width of the form */
+    padding: 5px;
+    box-sizing: border-box; /* padding + border included in total width and height */
+}
+
+#contact form label[for="fmessage"] {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact form textarea#fmessage {
+    width: 99%;
+    height: 150px; /* might need to adjust later */
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#contact form button {
+    background-color: #222;
+    color: #c78c06;
+    border-color: #c78c06;
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    text-align: center;
+    box-sizing: border-box; /* Includes padding + border in element's total width + height */
+    margin-top: 1rem;
+}
+
+/* HOURS */
+
+#hours h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#hours table {
+    border-collapse: collapse; /* Borders will collapse into a single border */
+    width: 100%; /* Make the table stretch across the page */
+}
+
+#hours th, #hours td {
+    border: 1px solid black;
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+#hours th {
+    background-color: #ffe6ac; /* Set background color for th tags */
+}
+
+/* LOCATION */
+
+#location h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%; /* footer stretches across webpage */
+    background-color: black;
+    color: #c78c06;
+    padding: 20px;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: #c78c06;
+    text-decoration: underline;
+    margin: 0
+}
+
+footer a:visited {
+    color: #c78c06;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #222;
+    background-color: #c78c06;
+}
+
+@media only screen and (min-width: 760px) {
+
+    header span {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        max-width: 1200px;
+        background-color: #222;
+        padding: 10px;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin-right: 20px;
+    }
+
+    .logo-box {
+        background-color: #222;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    /* WELCOME BANNER */
+
+    .welcome-grid-img {
+        height: 500px;
+        overflow: hidden;
+    }
+    
+    /* image takes 100% of container's width, hides overflow, and centers vertically */
+    .welcome-img {
+        width: 100%;
+        height: auto;
+        max-height: 100%; /* Ensure the image doesn't exceed the container height */
+        object-fit: cover; /* Hide overflow while maintaining aspect ratio */
+        display: block;
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    .welcome-text article {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        background-color: #222222b3;
+        box-sizing: border-box;
+    }
+
+    /* ABOUT */
+
+    .about-card {
+        display: flex;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        box-sizing: border-box; 
+    }
+    
+    /* Style for the about image */
+    .about-img {
+        max-width: 40%; /* Ensure the image doesn't exceed its container width */
+        padding-right: 1rem;
+    }
+    
+    /* Style for the about text */
+    .about-text {
+        flex: 1; /* Allow the text to take up the remaining space beside the image */
+        padding-left: 20px; /* Adjust the padding for spacing between the image and text */
+    }
+    
+    /* SERVICES */
+    /* I TRIED GRID FORMAT BUT SOMETHING'S NOT RIGHT COMMENT OUT FOR NOW
+    #services {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "x1 x1 x1 x1"
+        "x2 x2 x2 x2"
+        "x2 x2 x2 x2"
+        "x1 x1 x1 x1";
+        border: #222;
+        border-style: solid;
+        border-width: 2px;
+    }
+
+    .service-heading {
+        grid-column: 1/5;
+        grid-row: 1;
+    }
+    
+    .digital-card {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    .marketing-card {
+        grid-column: 3/5;
+        grid-row: 2;
+    }
+    
+    .video-card {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .web-card {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .print-card {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    */
+
+    /* Services flex original commented to save changes
+    #services {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+     }
+
+     .service-heading {
+        margin-right: auto;
+        order: -1;
+        flex-grow: 2;
+        width: 100%;
+    }
+    
+    .digital-card {
+        order: 1;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 48.66%;
+    }
+
+    .digital-card button {
+        width: 96%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .marketing-card {
+        order: 2;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 48.66%;
+    }
+
+    .marketing-card button {
+        width: 96%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video-card {
+        order: 3;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 32%;
+    }
+
+    .video-card button {
+        width: 94%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .web-card {
+        order: 3;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 32%;
+    }
+
+    .web-card button {
+        width: 94%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .print-card {
+        order: 3;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 32%;
+    }
+
+    .print-card button {
+        width: 94%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    */
+
+    #services {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 5rem;
+        margin-right: 5rem;
+     }
+
+     .service-heading {
+        margin-right: auto;
+        order: -1;
+        flex-grow: 2;
+        width: 100%;
+    }
+    
+    .digital-card {
+        margin: 0 0 0 0;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        order: 1;
+        width: 48.66%;
+    }
+
+    .digital-card button {
+        width: 96%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .marketing-card {
+        margin: 0 0 0 0;
+        order: 2;
+        margin-bottom: 1rem;
+        width: 48.66%;
+    }
+
+    .marketing-card button {
+        width: 96%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video-card {
+        order: 3;
+        margin: 0 0 0 0;
+        margin-right: 1rem;
+        flex-basis: 31.56%;
+    }
+
+    .video-card button {
+        width: 94%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .web-card {
+        order: 3;
+        margin: 0 0 0 0;
+        margin-right: 1rem;
+        flex-basis: 31.56%;
+    }
+
+    .web-card button {
+        width: 94%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .print-card {
+        order: 3;
+        margin: 0 0 0 0;
+        flex-basis: 31.56%;
+    }
+
+    .print-card button {
+        width: 94%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+     /* VISION */
+     /* copied from above IDK how to mess with it further
+     #vision {
+        margin-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem; 
+        background-image: url("../images/vision.jpg");
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+    }*/
+
+    /* TEAM */
+
+    #team {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .pink-shirt-grid {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .blk-shirt-grid {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .pink-shirt-grid img {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 50%;
+        width: 50%;
+    }
+
+    .blk-shirt-grid img {
+        order: 2;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 50%;
+        width: 50%;
+    }
+
+    .blk-shirt-grid article {
+        order: 1;
+    }
+
+    /* CONTACT, LOCATION, HOURS */
+
+    .contact-h2 {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    #last3-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    
+    #contact {
+        order: 1;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+    }
+
+    #location {
+        order: 2;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+    }
+
+    #hours {
+        order: 3;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+    }
+
+    /* FOOTER */
+
+    #footer p {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
 }
